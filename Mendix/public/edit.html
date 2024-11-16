@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="\output.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="flex justify-center items-center min-h-screen bg-[#1E1E1E] ">
+        <div
+            class="flex flex-col items-center m-10 w-[700px] h-auto text-2xl text-black font-sans p-20 bg-red-200 rounded-2xl ring-offset-2 ring-8 ring-blue-600 drop-shadow-xl">
+            <form action="/api/update" method="POST" class="flex flex-col space-y-10">
+                <!-- Input fields -->
+                <div class="flex items-center">
+                    <label class="mr-6 w-28 font-bold text-center drop-shadow-md"> Train ID </label>
+                    <input id="train-id" type="text" name="id" class="w-96 p-2 rounded-md bg-white drop-shadow-xl" />
+                </div>
+                <div class="flex items-center">
+                    <label class="mr-6 w-28 font-bold text-center drop-shadow-md"> Depart Time </label>
+                    <input id="departure-time" type="text" name="depart" class="w-96 p-2 rounded-md bg-white drop-shadow-xl" />
+                </div>
+                <div class="flex items-center">
+                    <label class="mr-6 w-28 font-bold text-center drop-shadow-md"> Arrive Time </label>
+                    <input id="arrival-time" type="text" name="arrive" class="w-96 p-2 rounded-md bg-white drop-shadow-xl" />
+                </div>
+                <div class="flex items-center">
+                    <label class="mr-6 w-28 font-bold text-center drop-shadow-md"> Ticket Price </label>
+                    <input id="ticket-price" type="text" name="price" class="w-96 p-2 rounded-md bg-white drop-shadow-xl" />
+                </div>
+                <div class="flex items-center">
+                    <label class="mr-6 w-28 font-bold text-center drop-shadow-md"> Seat </label>
+                    <input id="seat" type="text" name="seat" class="w-96 p-2 rounded-md bg-white drop-shadow-xl" />
+                </div>
+                <div class="flex items-center">
+                    <label class="mr-6 w-28 font-bold text-center drop-shadow-md"> Start </label>
+                    <input id="start-location" type="text" name="start" class="w-96 p-2 rounded-md bg-white drop-shadow-xl" />
+                </div>
+                <div class="flex items-center">
+                    <label class="mr-6 w-28 font-bold text-center drop-shadow-md"> Destination </label>
+                    <input id="destination" type="text" name="destination" class="w-96 p-2 rounded-md bg-white drop-shadow-xl" />
+                </div>
+                
+                <!-- Search button -->
+                <button
+                    type="submit"
+                    class="text-2xl w-full mt-10 font-mono rounded-2xl text-black bg-white hover:bg-black  hover:text-white h-16 drop-shadow-xl felx items-center">
+                    Confirm
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
