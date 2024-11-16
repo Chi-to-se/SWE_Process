@@ -128,7 +128,7 @@ router.post('/login-check', (req, res) => {
             console.log('Login successful');
             res.redirect('/show')
         } else {
-            console.log('Login unsuccessful');
+            res.send('Login unsuccessful');
         }
     });
 });
@@ -148,7 +148,7 @@ router.get('/show', (req,res) =>
     }
 )
 
-router.get('/login', (req,res) => 
+router.get('/', (req,res) => 
     {
         console.log(`Request at ${req.originalUrl}`);
         res.sendFile(path.join(`${__dirname}/public/login.html`));
